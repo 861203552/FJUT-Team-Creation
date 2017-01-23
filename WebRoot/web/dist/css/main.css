@@ -1,0 +1,136 @@
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 1.2rem;
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  background-color: #f4f7ed;
+}
+body header {
+  height: 70px;
+}
+body header nav {
+  background-color: #f4f7ed;
+  border-bottom: 0;
+}
+body header nav #logo {
+  height: 70px;
+}
+body header nav .active {
+  background-color: #fff;
+}
+body header nav a {
+  font-size: 20px;
+}
+body header nav .navbar-toggle {
+  background-color: #fff;
+  border-color: #010101;
+  right: 15px;
+}
+body header nav .navbar-toggle .icon-bar {
+  background-color: #010101;
+}
+body header nav .badge {
+  vertical-align: super;
+  background-color: #e05038;
+}
+body header nav .icon_box {
+  padding: 17px 17px 18px 17px;
+}
+body header nav .icon_box span {
+  font-size: 32px;
+}
+body header nav .icon_box .badge {
+  font-size: 20px;
+}
+body header nav #display_box {
+  padding: 5px;
+}
+body header nav #display_box img {
+  width: 60px;
+  height: 60px;
+  border: 0;
+}
+body #subject .container {
+  background-color: #fff;
+  padding: 20px;
+}
+body #subject .container .condition {
+  padding: 10px 0;
+  border-bottom: 5px solid #ccc;
+}
+body #subject .container .condition #condition_row {
+  height: 34px;
+}
+body #subject .container #subject_group {
+  margin-top: 10px;
+}
+body #subject .container #subject_group .brief .brief-left {
+  display: table-cell;
+}
+body #subject .container #subject_group .brief .brief-left img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+body #subject .container #subject_group .brief .brief-body {
+  position: relative;
+  display: inline-block;
+}
+body #subject .container #subject_group .brief .brief-body .school-num {
+  display: inline-block;
+  font-size: 1.8rem;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+body #subject .container #subject_group .brief .brief-body .school-num .num-lg {
+  background-color: #e05038;
+}
+body #subject .container #subject_group .brief .brief-body .school-num .num-md {
+  background-color: #5cb85c;
+}
+body #subject .container #subject_group .brief .brief-body .school-num .num-sm {
+  background-color: #118fdd;
+}
+@media only screen and (max-width: 30em) {
+  body #subject .container #subject_group .brief .brief-body .school-num {
+    font-size: 1rem;
+  }
+  body #subject .container #subject_group .brief .brief-body .brief-header {
+    font-size: 1.4rem;
+  }
+}
+body #subject .container #subject_group .brief .brief-body .brief-header {
+  margin-top: 0;
+}
+body #subject .container #subject_group .brief .brief-body .item-sc {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body #subject .container #subject_group .brief .brief-body .item-sc span {
+  display: block;
+  margin: 0;
+}
+body #subject .container #subject_group .brief .brief-body p {
+  padding: 0 0;
+}
+body #subject .container #subject_group .brief .brief-body p span {
+  display: inline-block;
+  font-size: 18px;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+}
+body #subject .container #subject_group .brief .brief-body p span + span {
+  margin-left: 50px;
+}
+body footer {
+  height: 100px;
+}
