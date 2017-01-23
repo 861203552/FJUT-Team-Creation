@@ -1,0 +1,167 @@
+@bg-color:      #f4f7ed;
+@base:          #fff;
+@red-light:     #e05038;
+@red-dark:      #b56969;
+@blue-light:    #118fdd;
+@blue-dark:     #89bdd3;
+@green-light:   #5cb85c;
+@green-dark:    #729f98;
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+html,body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  // 字体
+  font-size: 1.2rem;
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  background-color: @bg-color;
+  // 头部区域
+  header {
+    height: 70px;
+    nav {
+      background-color: @bg-color;
+      border-bottom: 0;
+      #logo {
+        height: 70px;
+      }
+      // 导航条激活状态
+      .active {
+        background-color: #fff;
+      }
+      a {
+        font-size: 20px;
+      }
+      .navbar-toggle {
+        background-color: #fff;
+        border-color: #010101;
+        right: 15px;
+        .icon-bar {
+          background-color: #010101;
+        }
+      }
+      // 徽章公共样式
+      .badge {
+        vertical-align: super;
+        background-color: @red-light;
+      }
+      // 系统消息，用了字体图标
+      .icon_box {
+        padding: 17px 17px 18px 17px;
+        span {
+          font-size: 32px;
+        }
+        // 大屏幕的系统消息徽章
+        .badge {
+          font-size: 20px;
+        }
+      }
+      // 头像
+      #display_box {
+        padding: 5px;
+        img {
+          width: 60px;
+          height: 60px;
+          border: 0;
+        }
+      }
+    }
+  }
+  //内容主体部分
+  #subject {
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      // 筛选条件
+      .condition {
+        padding: 10px 0;
+        border-bottom: 5px solid #ccc;
+        #condition_row {
+          height: 34px;
+        }
+      }
+      // 内容列表
+      #subject_group {
+        margin-top: 10px;
+        .brief {
+          //简要左侧
+          .brief-left {
+            display: table-cell;
+            img {
+              .rounded-corners(50%);
+            }
+          }
+          // 简要右侧
+          .brief-body {
+            position: relative;
+            display: inline-block;
+            //导师认证高校
+            .school-num {
+              display: inline-block;
+              font-size: 1.8rem;
+              position: absolute;
+              right: 10px;
+              top: 5px;
+              //导师认证徽章
+              .num-lg {
+                background-color: @red-light;
+              }
+              .num-md {
+                background-color: @green-light;
+              }
+              .num-sm {
+                background-color: @blue-light;
+              }
+            }
+            @media only screen and ( max-width: 30em ) {
+                .school-num {
+                    font-size: 1rem;
+                }
+                .brief-header {
+                    font-size: 1.4rem;
+                }
+            }
+            .brief-header {
+              margin-top: 0;
+            }
+            .item-sc {
+                position: absolute;
+                top: 0;
+                right: 0;
+                span {
+                    display: block;
+                    margin: 0;
+                }
+            }
+            p {
+              padding: 0 0;
+              span {
+                display: inline-block;
+                font-size: 18px;
+                width: 200px;
+                height: 40px;
+                line-height: 40px;
+              }
+              span+span {
+                margin-left: 50px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+  footer {
+    height: 100px;
+  }
+}

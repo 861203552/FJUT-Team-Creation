@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "greyu"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lsdFJUT/NO01_FJUT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
