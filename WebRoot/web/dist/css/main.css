@@ -119,7 +119,8 @@ body #subject .container #subject_group .brief .brief-body .item-sc span {
   margin: 0;
 }
 body #subject .container #subject_group .brief .brief-body p {
-  padding: 0 0;
+  padding: 0;
+  margin: 0;
 }
 body #subject .container #subject_group .brief .brief-body p span {
   display: inline-block;
@@ -130,6 +131,52 @@ body #subject .container #subject_group .brief .brief-body p span {
 }
 body #subject .container #subject_group .brief .brief-body p span + span {
   margin-left: 50px;
+}
+body #user_subject .container .user-navbar {
+  background-color: #fff;
+}
+body #user_subject .container .user-navbar .user-display {
+  border-bottom: 10px solid #f4f7ed;
+  padding: 15px 0 15px;
+}
+body #user_subject .container .user-navbar .user-display img {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+body #user_subject .container .user-navbar .user-display p {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 0 0 0 5px;
+  padding: 15px 0 15px 0;
+  word-break: break-word;
+}
+body #user_subject .container .user-navbar .user-nav {
+  border-top: 10px solid #f4f7ed;
+  margin: 0;
+  background-color: #f4f7ed;
+  border-bottom: 20px solid #f4f7ed;
+}
+body #user_subject .container .user-navbar .user-nav .list-group-item {
+  font-size: 1.8rem;
+  margin: 0;
+}
+body #user_subject .container .user-info {
+  padding: 10px 5px;
+  background-color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  body #user_subject .container .user-navbar {
+    border-right: 20px solid #f4f7ed;
+  }
+  body #user_subject .container .user-info {
+    border-left: 20px solid #f4f7ed;
+  }
 }
 body footer {
   height: 100px;
