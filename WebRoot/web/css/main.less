@@ -6,6 +6,7 @@
 @blue-dark:     #89bdd3;
 @green-light:   #5cb85c;
 @green-dark:    #729f98;
+@gray:          #c9c9c9;
 .rounded-corners (@radius: 5px) {
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
@@ -26,6 +27,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   background-color: @bg-color;
   // 头部区域
+  .read {
+    color: @gray;
+  }
   header {
     height: 70px;
     nav {
