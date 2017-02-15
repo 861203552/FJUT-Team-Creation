@@ -9,6 +9,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   background-color: #f4f7ed;
 }
+body .read {
+  color: #c9c9c9;
+}
 body header {
   height: 70px;
 }
